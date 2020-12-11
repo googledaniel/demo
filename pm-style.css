@@ -1,3 +1,46 @@
-body {
-    background-color: thistle;
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+html {
+    font-size: 14pt;
 }
+
+body {
+    font-family: 'Cinzel', serif;
+    box-sizing: inherit;
+}
+
+#main {
+    text-align: center;
+    /* flex-wrap: nowrap; */
+    margin: 2rem;
+    max-width: 50rem;
+    
+    
+    /* align-content: center; */
+    /* max-width: 45rem; */
+}
+
+#narrator {
+    display: flex;
+    align-self: center;
+}
+
+#container {
+    max-width: fit-content;
+}
+#container div {
+    display: inline-block;
+    margin: 1rem;
+    padding: .5rem;
+    vertical-align: top;
+    max-width: 20rem;
+    min-width: fit-content;
+}
+
+#pm-div  {
+    display: flex;
+    max-width: 20rem;
+
+    /* flex-wrap: wrap; */
+}
+
