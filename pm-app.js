@@ -209,11 +209,7 @@ class Player {
             $('#play-again-button').css('display', 'none');
             $('.choose-monarch-button').css('display', '');
 
-        })
-
-        
-        //add a button here to play again. Just set the variables back to 50/50 and turn is PM. Keep everything else
-        // $playAgain = $('#play')
+        });
     };
 }
 
@@ -233,7 +229,6 @@ class Monarch extends Player {
         } else if (choice === 1) {
             this.rideThroughStreets();
         };
-        //this.updateScoreboard(pm, currentMonarch);
 
     }
     
@@ -375,7 +370,6 @@ class PrimeMinister extends Player {
         
         $form.remove();
         $('.choose-monarch-button').css('display', '');
-        //$('#narrator').append($chooseJohnButton, $chooseEIButton, $chooseCharlesIButton, $chooseVictoriaButton, $chooseEIIButton, );
 
 
         $chooseJohnButton.on('click', (event3) => {//for now I'm just using the variables, I'd rather use the value though.
