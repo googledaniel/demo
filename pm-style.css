@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 
+
+/**/
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
 html {
     font-size: 14pt;
 }
@@ -7,40 +17,114 @@ html {
 body {
     font-family: 'Cinzel', serif;
     box-sizing: inherit;
+    
+    
 }
 
-#main {
+#main-container {
+    background-color: lightgoldenrodyellow;
+    padding: 1rem;
+    border: 2px, solid, lightslategrey;
+    box-sizing: inherit;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50rem;
+    min-height: 50rem;
+    /* padding: 4rem, 2rem; */
+}
+
+header {
+    margin-left: auto;
+    margin-right: auto;
+    width: 45rem;
+    min-height: 12rem;
+
+}
+
+h1 {
     text-align: center;
-    /* flex-wrap: nowrap; */
-    margin: 2rem;
-    max-width: 50rem;
-    
-    
-    /* align-content: center; */
-    /* max-width: 45rem; */
 }
 
 #narrator {
-    display: flex;
-    align-self: center;
+    
 }
 
-#container {
+/* #nav-buttons {
+    display: inline-block;
+    flex-direction: row;
+    vertical-align: bottom;
+} */
+
+#start-container {
     max-width: fit-content;
 }
-#container div {
+#scoreboard div {
     display: inline-block;
-    margin: 1rem;
-    padding: .5rem;
+    flex-direction: column;
+    /* margin: 1px, 2px; */
+    padding: 1px;
     vertical-align: top;
-    max-width: 20rem;
-    min-width: fit-content;
+    width: 24rem;
+    
 }
 
-#pm-div  {
+
+
+#pm-div #monarch-div div {
     display: flex;
-    max-width: 20rem;
+    /* width: 3rem; */
+    min-height: 20rem;
+    box-sizing: inherit;
+    content: '';
 
-    /* flex-wrap: wrap; */
 }
+
+.button-container {
+    display: flex;
+    flex-basis: 45pc;
+}
+
+button {
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ededed 5%, #dfdfdf 100%);
+	background-color:#ededed;
+	border-radius:2px;
+	border:1px solid #f5deba;
+	display:inline-block;
+	cursor:pointer;
+	color:#777777;
+	font-family:Arial;
+	font-size:14px;
+	font-weight:bold;
+	padding:3px 10px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+button:hover {
+	background:linear-gradient(to bottom, #dfdfdf 5%, #ededed 100%);
+	background-color:#dfdfdf;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+
+#play-again-button {
+    
+}
+
+.button-container .score {
+    height: 3rem;
+    width: fit-content;
+    box-sizing: inherit;
+    /* border-radius: 50%; */
+    /* position: fixed; */
+    opacity: 10%;
+    background-color: lightblue;
+    /* The z index is 1k so it covers everything else EXCEPT the button (which has z-index of 2k) */
+    /* z-index: 2000; */
+    transition: transform 0.8s;
+    
+}
+
 

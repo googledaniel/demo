@@ -12,24 +12,96 @@
     <link rel="stylesheet" href="pm-style.css">
 </head>
 <body>
-    <div id="main">
-        <h1>Prime Minister</h1>
-        <div id="narrator">
-        
-        </div>
-        
-        <div id="container"> 
-            <div id="pm-div">
+
+
+    <div id="main-container">
+        <header>
+            <br>
+            <h1>Prime Minister</h1>
+            <br>
+            <div id="narrator">
                 
-
             </div>
+
+            <button type="click" id="play-again-button">Play Again</button>
+            <span id="nav-buttons">
+                <button type="click" class="choose-monarch-button" id="johnI">John I</button>
+                <button type="click" class="choose-monarch-button" id="elizabethI">Elizabeth I</button>
+                <button type="click" class="choose-monarch-button" id="charlesI">Charles I</button>
+                <button type="click" class="choose-monarch-button" id="victoria">Victoria</button>
+                <button type="click" class="choose-monarch-button" id="elizabethII">Elizabeth II</button>
+            </span>
+        </header>
+
+        <div id="scoreboard">
+            <div id="pm-div">
+                <h2 class="score" id="pm-player"></h2>
+                <br>
+                <h3 class="score" id="pm-popularity"></h3>
+                <br>
+                <p></p>
+
+                <div class="button-container"> 
+                    <div class="play-button"> 
+                        <button type="click" class="pm-button" id="pm-button-1">Build Coal Industry</button>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <div class="play-button">
+                        <button type="click" class="pm-button" id="pm-button-2">Go to Minor War</button>
+                    </div>
+                </div>
+                
+                <div class="button-container">
+                    <div class="play-button">
+                        <button type="click" class="pm-button" id="pm-button-3">Go to World War</button>
+                    </div>
+                </div>
+                
+                <div class="button-container">
+                    <div class="play-button">
+                        <button type="click" class="pm-button" id="pm-button-4">Deal with Plague</button>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <div class="play-button">
+                        <button type="click" class="pm-button" id="pm-button-5">Launch Empire</button>
+                    </div>
+                </div>
+                
+                <div class="button-container">
+                    <div class="play-button">
+                        <button type="click" class="pm-button" id="pm-button-6">Print Money</button>
+                    </div>
+                </div>
+        
+            </div>
+
             <div id="monarch-div">
-            
+                <h2 class="score" id="monarch-player"></h2>
+                <br>
+                <h3 class="score" id="monarch-popularity"></h3>
+                <br>
+                <p></p>
+
+                <div >
+                    
+                    
+                    <br>
+                    <button type="click" class="monarch-button" id="monarch-button-1">Let Monarch Play</button>
+                    <!-- </div> -->
+                </div>
+
             </div>
         </div>
-        <div id="play">
-
+        <div class="play-again">
+            
         </div>
+            
+
     </div>
+
 </body>
 </html>
