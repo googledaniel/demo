@@ -57,6 +57,8 @@ const roundSetup = () => {
     game.playGame(pm, currentMonarch);
 };
 
+/// CLASSES ///
+
 class Game {
     constructor (name) {
         this.name = name;

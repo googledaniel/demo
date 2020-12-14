@@ -24,7 +24,7 @@ body {
 #main-container {
     background-color: lightgoldenrodyellow;
     padding: 1rem;
-    border: 2px, solid, lightslategrey;
+    /* border: 2px, solid, black; */
     box-sizing: inherit;
     margin-left: auto;
     margin-right: auto;
@@ -46,7 +46,7 @@ h1 {
 }
 
 #narrator {
-    
+    transition-duration: .3s;
 }
 
 /* #nav-buttons {
@@ -69,14 +69,20 @@ h1 {
 }
 
 
-
-#pm-div #monarch-div div {
+#pm-div, #monarch-div {
     display: flex;
+    flex-direction: column;
+    /* background-color: linen; */
+    border-radius: .5em;
     /* width: 3rem; */
     min-height: 20rem;
     box-sizing: inherit;
     content: '';
 
+}
+
+.opaque {
+    opacity: 50%;
 }
 
 .button-container {
